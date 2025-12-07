@@ -1,0 +1,72 @@
+#main-container{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+}
+
+#light {
+    width: 15rem; 
+    height: 15rem;
+    margin: 20px auto;
+    border-radius: 50%; 
+    background: #ccc;
+    transition: all 0.5s;
+}
+      
+#light.on { 
+    background: #ffee00;
+    box-shadow: 0 0 50px #ffee00; 
+}
+      
+#light.off { 
+    background: #999;
+}
+    
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 12px;
+    padding: 18px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.row {
+    margin: 10px 0;
+    gap: 10px;
+}
+
+.card h3 {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+.row label {
+    width: 90px;
+    font-size: 14px;
+    color: #333;
+}
+
+.row input {
+    width: 15rem;
+    padding: 7px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button {
+    align-self: center;
+    width: 10rem;
+    padding: 10px 15px;
+    background: #e2e8f0;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #cbd5e1;
+}
